@@ -174,7 +174,7 @@ def addNoise2(num):
 
     #generates the generic policies
     for i in range(num):
-        pbac = "{},organize data,l_comment,,\n".format(str(id))
+        pbac = "{},perform CEO tasks,l_comment,,\n".format(str(id))
         rbac1 = "{},CEO,l_comment,,\n".format(str(id))
         abac1 = "{},l_comment,CEO,comment,security 1,\n".format(str(id))
         f = open("pbacPolicy.csv", "a")
@@ -264,7 +264,7 @@ def createPolicies2(num):
                         if noneCount >= 1:
                             cond = 1
                         condition = "admin owner"
-                        pbac = "{},organize data,{},,\n".format(str(id), permission)
+                        pbac = "{},perform CEO tasks,{},,\n".format(str(id), permission)
                         rbac1 = "{},CEO,{},,\n".format(str(id), permission)
 
                         #gets the table type
@@ -288,7 +288,7 @@ def createPolicies2(num):
                                 randNum4 = random.randint(0, len(conditionDict[table])-1)
                             condition = conditionDict[table][randNum4]
                             
-                            pbac = "{},organize data,{},{},\n".format(str(id), permission, condition)
+                            pbac = "{},perform CEO tasks,{},{},\n".format(str(id), permission, condition)
                             rbac1 = "{},CEO,{},{},\n".format(str(id), permission, condition)
                         else:
                             noneCount += 1
@@ -353,7 +353,7 @@ def createPolicies2(num):
                     if noneCount >= 1:
                         cond = 1
                     condition = "admin owner"
-                    pbac = "{},organize data,{},,\n".format(str(id), permission)
+                    pbac = "{},perform CEO tasks,{},,\n".format(str(id), permission)
                     rbac1 = "{},CEO,{},,\n".format(str(id), permission)
 
                     #gets the table type
@@ -377,7 +377,7 @@ def createPolicies2(num):
                             randNum4 = random.randint(0, len(conditionDict[table])-1)
                         condition = conditionDict[table][randNum4]
                         
-                        pbac = "{},organize data,{},{},\n".format(str(id), permission, condition)
+                        pbac = "{},perform CEO tasks,{},{},\n".format(str(id), permission, condition)
                         rbac1 = "{},CEO,{},{},\n".format(str(id), permission, condition)
                     else:
                         noneCount += 1
@@ -441,7 +441,7 @@ def createPolicies2(num):
                     if noneCount >= 1:
                         cond = 1
                     condition = "admin owner"
-                    pbac = "{},organize data,{},,\n".format(str(id), permission)
+                    pbac = "{},perform CEO tasks,{},,\n".format(str(id), permission)
                     rbac1 = "{},CEO,{},,\n".format(str(id), permission)
 
                     #gets the table type
@@ -465,7 +465,7 @@ def createPolicies2(num):
                             randNum4 = random.randint(0, len(conditionDict[table])-1)
                         condition = conditionDict[table][randNum4]
                         
-                        pbac = "{},organize data,{},{},\n".format(str(id), permission, condition)
+                        pbac = "{},perform CEO tasks,{},{},\n".format(str(id), permission, condition)
                         rbac1 = "{},CEO,{},{},\n".format(str(id), permission, condition)
                     else:
                         noneCount += 1
@@ -554,7 +554,7 @@ def createPolicies3(num):
                         if noneCount >= 1:
                             cond = 1
                         condition = "admin owner"
-                        pbac = "{},organize data,{},,\n".format(str(id), permission)
+                        pbac = "{},perform CEO tasks,{},,\n".format(str(id), permission)
                         rbac1 = "{},CEO,{},,\n".format(str(id), permission)
 
                         #gets the table type
@@ -578,7 +578,7 @@ def createPolicies3(num):
                                 randNum4 = random.randint(0, len(conditionDict[table])-1)
                             condition = conditionDict[table][randNum4]
                             
-                            pbac = "{},organize data,{},{},\n".format(str(id), permission, condition)
+                            pbac = "{},perform CEO tasks,{},{},\n".format(str(id), permission, condition)
                             rbac1 = "{},CEO,{},{},\n".format(str(id), permission, condition)
                         else:
                             noneCount += 1
@@ -633,7 +633,7 @@ def createPolicies3(num):
                         if noneCount >= 1:
                             cond = 1
                         condition = "admin owner"
-                        pbac = "{},organize data,{},,\n".format(str(id), permission)
+                        pbac = "{},perform CEO tasks,{},,\n".format(str(id), permission)
                         rbac1 = "{},CEO,{},,\n".format(str(id), permission)
 
                         #gets the table type
@@ -657,7 +657,7 @@ def createPolicies3(num):
                                 randNum4 = random.randint(0, len(conditionDict[table])-1)
                             condition = conditionDict[table][randNum4]
                             
-                            pbac = "{},organize data,{},{},\n".format(str(id), permission, condition)
+                            pbac = "{},perform CEO tasks,{},{},\n".format(str(id), permission, condition)
                             rbac1 = "{},CEO,{},{},\n".format(str(id), permission, condition)
                         else:
                             noneCount += 1
@@ -713,7 +713,7 @@ def createPolicies3(num):
                         if noneCount >= 1:
                             cond = 1
                         condition = "admin owner"
-                        pbac = "{},organize data,{},,\n".format(str(id), permission)
+                        pbac = "{},perform CEO tasks,{},,\n".format(str(id), permission)
                         rbac1 = "{},CEO,{},,\n".format(str(id), permission)
 
                         #gets the table type
@@ -737,7 +737,7 @@ def createPolicies3(num):
                                 randNum4 = random.randint(0, len(conditionDict[table])-1)
                             condition = conditionDict[table][randNum4]
                             
-                            pbac = "{},organize data,{},{},\n".format(str(id), permission, condition)
+                            pbac = "{},perform CEO tasks,{},{},\n".format(str(id), permission, condition)
                             rbac1 = "{},CEO,{},{},\n".format(str(id), permission, condition)
                         else:
                             noneCount += 1
@@ -815,7 +815,7 @@ def createPolicies4(num):
                 if permissionList[i][0][k] not in used:
                     permission = permissionList[i][0][k]       
                     condition = "admin owner"
-                    pbac = "{},organize data,{},,\n".format(str(id), permission)
+                    pbac = "{},perform CEO tasks,{},,\n".format(str(id), permission)
                     rbac1 = "{},CEO,{},,\n".format(str(id), permission)
                     
                     #for random number of environment attributes
@@ -853,7 +853,7 @@ def createPolicies4(num):
             for k in range(len(permissionList[i][1])):
                 if permissionList[i][1][k] not in used:
                     condition = "admin owner"
-                    pbac = "{},organize data,{},,\n".format(str(id), permission)
+                    pbac = "{},perform CEO tasks,{},,\n".format(str(id), permission)
                     rbac1 = "{},CEO,{},,\n".format(str(id), permission)
 
                     #for random number of environment attributes
@@ -894,7 +894,7 @@ def createPolicies4(num):
                 if permission not in used:
 
                     condition = "admin owner"
-                    pbac = "{},organize data,{},,\n".format(str(id), permission)
+                    pbac = "{},perform CEO tasks,{},,\n".format(str(id), permission)
                     rbac1 = "{},CEO,{},,\n".format(str(id), permission)
                     
                     #for random number of environment attributes
