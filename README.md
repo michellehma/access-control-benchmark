@@ -9,7 +9,7 @@ Running this code would require:
 
 policies.py should be ran first if you want to execute queries with access control. 
 
-# Access Control Models Implementation
+# Access Control Models Implementation(Alternate approach)
 
 This repository contains implementations of three different access control models: Attribute-Based Access Control (ABAC), Policy-Based Access Control (PBAC), and Role-Based Access Control (RBAC). These models are designed to simulate various security scenarios to demonstrate how different access control strategies can be applied across various conditions.
 
